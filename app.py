@@ -15,7 +15,7 @@ if not api_key:
     st.stop()
 
 client = Groq(api_key=api_key)
-MODEL = "llama-3.3-70b-versatile"  # update if Groq retires it
+MODEL = "openai/gpt-oss-120b"  # update if Groq retires it
 
 ACTIVITY = {"Sedentary": 1.2, "Light": 1.375, "Moderate": 1.55, "Very active": 1.725}
 
